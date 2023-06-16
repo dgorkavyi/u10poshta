@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::post('/send', [DeliveryController::class, 'send'])->name('send');
 Route::get('/', function () {
     return view('welcome');
 });
+
